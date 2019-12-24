@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 200px;
+            margin: 0 auto;
+        }
+        
+        #content {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: blue;
+            display: none;
+        }
+        
+        #opendiv.active {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <button>Cilck Me</button>
+        <!-- 点击button先让content滑出来，再改变open-content的背景颜色 -->
+        <button id="opendiv">Open Div</button>
+    </div>
+
+    <div id="content">hello callback</div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
